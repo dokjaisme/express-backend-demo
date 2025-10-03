@@ -45,6 +45,11 @@ app.get('/about', (req, res) => {
   res.send('This is the about page');
 });
 
+//dynamic route
+app.get('/users/:id', (req, res) => {
+  res.send(`User ID: ${req.params.id}`);
+});
+
 //start
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
