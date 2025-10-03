@@ -46,8 +46,8 @@ app.get('/about', (req, res) => {
 });
 
 //dynamic route
-app.get('/users/:id', (req, res) => {
-  res.send(`User ID: ${req.params.id}`);
+app.get('/user/:id', (req, res) => {
+  res.send(`Users ID: ${req.params.id}`);
 });
 
 //start
