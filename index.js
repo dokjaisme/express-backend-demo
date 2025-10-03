@@ -40,6 +40,11 @@ app.get('/users/:id', (req, res) => {
   res.json(user);
 });
 
+//about
+app.get('/about', (req, res) => {
+  res.send('This is the about page');
+});
+
 //start
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
